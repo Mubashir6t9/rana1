@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+      #map {
+          height: 100px;
+      }
+  </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container"> 
+      <div class="container" style="float: left; width:50%" >
+        <form action="" class="shadow-lg p-4" >
+            <h2 class="text-center text-primary" style="font-family: cooper;"> Contact Us</h2>
+            <i class="fa-solid fa-user-tag"></i> <label for="">User Name</label>
+            <input type="text" name="" id="name" class="form-control">
+            <div id="d1"></div>
+            <i class="fa-sharp fa-solid fa-envelope"></i> <label for="">Email</label>
+            <input type="Email" name="" id="email" class="form-control">
+            <div id="d2"></div>
+            <i class="fa-sharp fa-solid fa-key"></i><label for=""> Password</label>
+            <input type="Password" name="" id="pass" class="form-control">
+            <div id="d3"></div>
+            <i class="fa-sharp fa-solid fa-key"></i><label for="">ConfirmPassword</label>
+            <input type="Password" name="" id="cpass" class="form-control">
+            <input type="checkbox" name="" id="show">Show Password
+            <div id="d4"></div>
+            <input type="submit" value="submit" class="btn btn-success mt-2 btn-block" id="btn">
+        </form>
+      </div>
+      <div class="container">
+          <h1>Contact info</h1>
+        <h1>Address</h1>
+          <p>66 Guild Street 512B, Great North Town.</p>
+        <h1> Call Us</h1>
+          <li style="list-style-type: none;">(+44) 123 456 789</li>
+          <li style="list-style-type: none;">+ (124) 1523-567-9874</li>
+          <h1>Email Here</h1>
+          <li style="list-style-type: none;">example@yourdomain.com</li>
+          <li style="list-style-type: none;">info@yourdomain.com</li>
+          <h1>Opening Hours</h1>
+          <li style="list-style-type: none;">Mon-Fri: 10:00-18:00</li>
+          <li style="list-style-type: none;">Sat-Sun: 10:00-14:00</li>
+      </div>
+    </div>
+      <script>
+        $('#btn').click(function(){
+            let name=$('#name').val();
+            let email=$('#email').val();
+            let pass=$('#pass').val();
+            let cpass=$('#cpass').val();
+    
+            if(name=='')
+            {
+              $('#d1').html('Please fill this box..');
+              $('#d1').css({
+                'color':'gray',
+                'fontFamily':'cooper'
+              })
+              return false;
+            }
+    
+            else if(email=='')
+            {
+              $('#d2').html('Please fill this box....');
+              $('#d2').css({
+                'color':'gray',
+                'fontFamily':'cooper'
+              })
+              return false;
+            }
+    
+            else if(pass=='')
+            {
+              $('#d3').html('Please fill this box..');
+              $('#d3').css({
+                'color':'gray',
+                'fontFamily':'cooper'
+              })
+              return false;
+            }
+    
+            else if(cpass=='')
+            {
+              $('#d4').html('Please fill this box..');
+              $('#d4').css({
+                'color':'gray',
+                'fontFamily':'cooper'
+              })
+              return false;
+            }
+             else if(pass != cpass)
+             {
+              $('#d4').html('password and cpass should be same')
+              $('#d4').css({
+                'color':'gray',
+                'fontFamily':'cooper'
+              })
+              return false;
+             } });
+             $('#show').click(function()
+             {
+              let pass=$('#pass')[0];
+              let cpass=$('#cpass')[0];
+                 if(pass.type=="password" && cpass.type=="password"){
+                     pass.type="text";
+                     cpass.type="text";
+                 }
+                 else
+                 {
+                  pass.type="password";
+                  cpass.type="password";
+                
+                 }
+
+            
+          });
+      </script> 
+       <div id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1710.7806061402976!2d-2.102520717411371!3d57.144821125655305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48840e3b7404a2c9%3A0xeb9181892a540521!2s512b%2C%2066%20Guild%20St%2C%20Aberdeen%20AB11%206NB%2C%20UK!5e1!3m2!1sen!2s!4v1702986427034!5m2!1sen!2s" width="1330" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>       </div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

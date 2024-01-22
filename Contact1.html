@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="./jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+     /* NAVBAR */
+     .header{
+      height: 70px;
+      width: 100%;
+      background-color: white;
+      box-shadow: 2px 2px 4px gray;
+    }
+    .header{
+       position: fixed;
+       top: 0;
+       z-index: 1000; 
+      
+    }
+    .header ul li ul li{
+    list-style: none;
+   }
+   .header ul li ul li a{
+text-decoration: none;
+color: black;
+font-style: italic;
+font-weight: bold;
+font-family: cooper;
+
+}
+.header ul li ul li a:hover{
+color: #b71540;
+
+}
+   .header .fa{
+    color: #b71540;
+   }
+     .anchor{
+        color:Black;
+        margin-left: 25px;
+        font-size: 18px;
+        font-family: cooper;
+       margin-top: 30px; 
+
+    }
+    .anchor:hover{
+      
+        color: #b71540;
+
+    }
+    .header span{
+    color: #b71540;
+    font-family: pristina;
+    font-size: 60px;
+    font-weight: bold;
+   }
+   
+   .header{
+    color: black;
+    font-family: cooper;
+    font-size: 25px;
+   }
+   .header small{
+    font-family: pristina;
+    color: #b71540;
+    font-size: 16px;
+    font-weight: bold;
+   }
+
+/* HEADING */
+    
+    .heading{
+        margin-top: 150px;
+        margin-bottom: 30px;
+      
+    }
+    .heading h1{
+        font-family: vardana;
+        font-style: italic;
+        color:#b71540;
+        border-bottom: 2px solid black;
+    }
+
+   /* CONTENT */
+
+    .connect h2{
+        font-family: cursive;
+        color: #b71540;
+        margin-top: 30px;
+
+    }
+    .connect p,.connect h3{
+        font-family: cursive;
+    }
+
+    /* CARD */
+
+    .card{
+        margin-top: 30px;
+    }
+    .card-header h2,.card-header p{
+        color: white;
+    }
+   
+.card-body{
+    background-color: white;
+    color: black;
+    border: 2px solid #b71540;
+}
+.card-header{
+    background-color: #b71540;
+    height: 140px;
+    border: 2px solid #b71540;
+}
+
+/* BRANCHES */
+
+.branch{
+    margin-top: 60px;
+
+}
+.branch2{
+    background-color: #b71540;
+    height: 250px;
+    color: white;
+    padding-left: 50px;
+}
+.branch1{
+    background-color: #b71540;
+    height: 250px;
+    color: white;
+    padding-left: 50px;
+    width: 100%;
+}
+.branch h2{
+    font-family: vardana;
+    font-style: italic;
+    margin-top: 20px;
+    
+}
+.branch p{
+    font-family: cursive;
+}
+
+/* FORM */
+
+.form-group{
+    margin-top: 30px;
+}
+.form label{
+    width: 100px;
+    margin-top: 25px;
+    font-family: cursive;
+
+    }
+    #cnic{
+        width: 512px;
+    } 
+    .form .button{
+        margin-bottom: 30px;
+        margin-top: 20px;
+        border-radius: 20px;
+        border: 1px solid #b71540;
+        color:#b71540;
+        transition: 1s;
+        /* margin-left: 70px; */
+        float: right;
+    }
+   
+    
+    .form .button:hover{
+        border: 1px solid white;
+        color:white ;
+        background-color: #b71540;
+    }
+    #checkbox{
+        width: 512px;
+        height: 200px;
+    } 
+    .button{
+    height: 40px;
+    width: 200px;
+  } 
+    /* MAP */
+
+    .map{
+        margin-top: 60px;
+    }
+    .map iframe{
+    width: 100%;
+    height: 400px;
+   }
+    /* WHATSAPP LOGO */
+
+    #wap1{
+    font-size: 50px;
+    color: rgb(47, 204, 47);
+    position: fixed;
+    bottom:0;
+       z-index: 1000;
+       height: 70px;
+       width: 70px;
+  }
+ 
+  
+  
+  
+  /* FOOTER */
+
+   .footer{
+    margin-top: 60px;
+  
+    color: white;
+    background-color: #b71540;
+   }
+   .footer h2{
+    font-family:vardana;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-top: 60px;
+   }
+   .footer p{
+    font-family: cursive;
+    font-size: 15px;
+    margin-bottom: 40px;
+   
+   }
+   .footer-end{
+    font-family: cursive;
+    font-size: 15px;
+    font-style: italic;
+   }
+   .footer ul li{
+    list-style: none;
+    padding: 5px;
+
+   }
+   .footer ul li a{
+    color: white;
+   
+    font-family:cursive;
+    display: inline-block;
+   }
+   .footer a{
+    color: black;
+    font-family: vardana;
+   }
+   .footer .fa{
+    margin-bottom: 20px;
+  margin-left: 30px;
+    color:white;
+ 
+    font-size: 40px;
+   }
+   
+   
+   
+
+   @media (max-width:1199px){
+
+    /* FORM */
+
+    #checkbox,#cnic,#name,#email,#city,#cellno{
+        width: 400px;
+    }
+    .card{
+        margin-top: 200px;
+    }
+   
+   }
+   @media(max-width:992px){
+
+    /* NAVBAR */
+
+    .header ul li a{
+        font-size: 17px;
+        margin-left: 0px;
+   }
+    /* FOOTER */
+
+    .footer p{
+        font-size: 14px;
+    }
+   }
+
+   @media(max-width:768px){
+
+       /* NAVBAR */
+       .header span{
+            font-size: 40px;
+        
+        }
+        .header h2{
+            font-size:18px;
+        }
+        .header ul li a{
+            font-size: 16px;
+          
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .header{
+            padding-top: 40px;
+            height: 120px;
+            padding-bottom: 20px;
+    }
+
+    /* BRANCHES */
+
+    .branch p{
+        font-size: 15px;
+    }
+    .branch1,.branch2{
+       padding-left: 20px;
+    }
+
+
+   }
+   @media (max-width:576px){
+/* NAVBAR */
+
+.header{
+    padding-top: 40px;
+    height: 120px;
+    padding-bottom: 20px;
+
+}
+.header ul li a{           
+     margin-left: 0px;
+        font-size: 14px;
+}
+        /* FORM */
+
+        .form-group{
+            margin-top: 0px;
+        }
+        .form label{
+            margin-top: 0px;
+        }
+
+        /* CONTENT */
+
+        .connect p{
+            margin-bottom: 40px;
+        }
+
+        /* CARD */
+
+        .card{
+            margin-top: 40px;
+        }
+
+        /* BRANCHES */
+
+        .branch2{
+            margin-top: 20px;
+        }
+        .branch{
+            width: 80%;
+        }
+           /* FOOTER */
+
+  .footer{
+    text-align: center;
+  }
+  .footer h2{
+    margin-top: 30px;
+  }
+
+/* WHATSAPP LOGO */
+
+ #wap1{
+    
+    height: 60px;
+    width: 60px;
+ }
+ 
+   }
+  @media (max-width:400px){
+
+  
+     /* NAVBAR */
+
+     .header ul li a{
+      font-size: 12px;
+    }
+  /* CARD */
+    .card-header{
+    height: 180px;
+ }
+ .card{
+    margin-left: 30px;
+ }
+
+ /* FORM */
+
+ #name,#email,#cnic,#cellno,#city,#checkbox{
+        width: 300px;
+    }
+  }
+  @media (max-width:350px){
+    
+/* NAVBAR */
+
+    .header ul li a{
+      font-size: 10px;
+    }
+
+    /* FORM */
+    
+    #name,#email,#cnic,#cellno,#city,#checkbox{
+        width: 200px;
+    }
+    .card{
+        margin-left: 0px;
+    }
+  }
+  @media (max-width:315px){
+
+/* NAVBAR */
+
+.header ul li a{
+  font-size: 8px;
+}
+  }
+  </style>
+  <body>
+
+    <!-- NAVBAR -->
+
+    <nav class="header navbar navbar-expand">
+        <div class=" container">
+       <div class="row">
+        <div class="col-md-5">
+          <h2 class="navbar-brand logo-icon text-center"><span>S</span>AFE <span>C</span>ARZ <small>Limited</small></h2> 
+        </div>
+        <div class="col-md-7">
+            <ul class="main navbar-nav ml-auto ">
+                <li class="nav-item"><a class="nav-link anchor" href="./Home.html"><b>HOME</b></a></li>
+                <li class="nav-item"><a class="nav-link anchor" href="./About1.html"><b>ABOUT</b></a></li>
+                <li class="nav-item dropdown"><a class="nav-link anchor dropdown-toggle" data-toggle="dropdown"  href=""><b>SERVICES</b></a>
+                    <ul class=" dropdown-menu bg-white">
+                        <li class="dropdown-item bg-white"><a class="dropdown-link" href="./car.html"><i class=" fa fa-solid fa-car"></i> &nbsp;&nbsp;Cars</a></li>
+                        <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Van.html"><i class=" fa fa-solid fa-van-shuttle"></i> &nbsp;&nbsp;Vans</a></li>
+                        <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Bus.html"><i class=" fa fa-solid fa-bus"></i> &nbsp;&nbsp;Buses</a></li>
+                        <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Bike.html"><i class=" fa fa-solid fa-motorcycle"></i> &nbsp;&nbsp;Bike</a></li>
+                        <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Truck.html"><i class=" fa fa-solid fa-truck"></i> &nbsp;&nbsp;Trucks</a></li>
+                    </ul></li>
+                <li class="nav-item"><a class="nav-link anchor" href="./Insurance Companies.html"><b>LINKS</b></a></li>
+                <li class="nav-item"><a class="nav-link anchor" href="./Contact1.html"><b>CONTACT</b></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+      </nav>
+    <div class="container heading">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1><b>Contact Us</b></h1>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- CONTENT -->
+
+
+        <div class="back">
+        <div class="container connect">
+        <div class="row ">
+            <div class="col-lg-7">
+
+                <h2><b>Stay Connect</b></h2>
+                <p>We would love to talk to you.
+                    Have a question or comment?
+                    Please fill out the form below to reach out to us.
+                    Our Agent will contact and assist you .</p>
+
+                    <!-- FORM -->
+
+                <form action="./Contact1.html" class="form-inline form">
+                    <div class="form-group"> 
+                        <label for="">Name</label>
+                        <input type="text" name="" id="name" class="form-control">
+                       
+                    </div>
+                    <div id="d1"></div>
+                    <div class="form-group"> 
+                        <label for="">Email</label>
+                        <input type="email" name="" id="email" class="form-control">
+                     
+                    </div>
+                    <div id="d2"></div>
+                    <div class="form-group"> 
+                        <label for="">City</label>
+                        <input type="text" name="" id="city" class="form-control">
+                    </div>
+                    <div class="form-group"> 
+                        <label for="">Cell Number</label>
+                        <input type="number" name="" id="cellno" class="form-control">
+                    </div>
+                    <div class="form-group"> 
+                        <label for="">CNIC</label>
+                        <input type="number" name="" id="cnic" class="form-control">
+
+                    </div>
+                    
+                 
+                    <div class="form-group"> 
+                        <label for="">Message</label><br><br>
+                        <textarea name="" id="checkbox" cols="30" rows="10" class="form-control"></textarea><br>
+                        
+
+                    </div>
+                    
+                    <input type="submit" value="Submit" class="button  " id="last" ><div id="ld"></div>
+                   
+                
+                   
+                </form>
+            </div>
+
+            <!-- CARD -->
+
+            <div class="col-lg-5">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <h2>Head Office</h2>
+                        <p>93Q9+GMQ, Samanabad Rd, Bank Chowk, Block B, Faisalabad, Pakistan</p>
+                    </div>
+                    <div class="card-body">
+                        <h3>Call Center</h3>
+                        <p>(+44) 123 456 789 <br>
+                        + (124) 1523-567-9874</p>
+                        <h3>Email Here</h3>
+                        <p>safecarz@gmail.com</p>
+                        <p>info@gmail.com</p>
+                        <h3>Opening Hours</h3>
+                        <p>Mon-Fri: 10:00-18:00</p>
+                        <p> Sat-Sun: 10:00-14:00</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- BRANCHES -->
+
+    <div class="container branch">
+        <div class="row ">
+            <div class="col-sm-5 branch1 ">
+                <h2>Head Office</h2>
+                    <p>93Q9+GMQ, Samanabad Rd, Bank Chowk, Block B, Faisalabad, Pakistan</p>
+                     <p>(+44) 123 456 789 <br>
+                        + (124) 1523-567-9874</p>
+            </div>
+            <div class="col-sm-5 offset-md-2 offset-sm-1 branch2">
+                <h2>Islamabad Branch</h2>
+                <p>
+                    Saleemi Tower, 2nd Floor, 'D' Ground, Faisalabad</p>
+                     <p>(+44) 487 456 789 <br>
+                        + (124) 9756-567-9874</p>
+            </div>
+        </div>
+        </div>
+        <!-- MAP -->
+
+       <div class="container map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.91718029011!2d73.06666611085127!3d31.388847074167217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39225d492876e01d%3A0x8223e78ed006ed8!2sState%20Life!5e0!3m2!1sen!2s!4v1703955197626!5m2!1sen!2s"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+           <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+          
+
+           <!-- FOOTER -->
+
+           <div class="footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3 col-sm-6">
+                  <h2>Safe carz Limited</h2>
+                  <p>Your trusted partner in automotive safety. At Safe Carz, we specialize in providing comprehensive solutions for vehicle safety, offering a range of services from reliable insurance coverage to state-of-the-art security systems. Drive with confidence, drive with Safe Carz."</p>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <h2>Our  Services</h2>
+                  <ul>
+                    <li><a href="./car.html">Car</a></li>
+                    <li><a href="./Bus.html">Buses</a></li>
+                    <li><a href="./Truck.html">Trucks</a></li>
+                    <li><a href="./Van.html">Vans</a></li>
+                    <li><a href="./Bike.html">Bike</a></li>
+           
+                  </ul>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <h2> Insurance Companies</h2>
+                  <ul>
+                    <li><a href="https://www.jubileelife.com/" target="_blank">Jubilee Insurance Company</a></li>
+                    <li><a href="https://igiinsurance.com.pk/" target="_blank">IGI Insurance Company</a></li>
+                    <li><a href="https://www.nationwide.com/" target="_blank">Nationwide Insurance</a></li>
+                    <li><a href="http://pil.com.pk" target="_blank">Premier Insurance</a></li>
+                    <a href="./Insurance Companies.html">More Detail</a>
+                  </ul>
+                  
+                </div>
+                <div class="col-md-3 col-sm-6">
+                 <h2>Contact Info</h2>
+                 <p>93Q9+GMQ, Samanabad Rd, Bank Chowk, Block B, Faisalabad, Pakistan</p>
+                 <h6>Phone</h6>
+                 <p>(+44) 123 456 789
+                  <br>+ (124) 1523-567-9874
+                 </p>
+                 <h6>Email</h6>
+                 <p>safecarz@gmail.com
+                  <br>
+                  info@gmail.com</p>
+                
+                </div>
+                <i class=" fa fa-brands fa-facebook" id="fb"></i>
+                <i class="fa fa-brands fa-whatsapp" id="wap"></i>
+                <i class="fa fa-brands fa-twitter" id="twit"></i>
+              </div>
+              
+            </div>
+          </div>
+          <div class="footer-end text-center">
+            <div class="container">
+              <p>&copy Safe Carz Limited| All Right Reserved | 2000</p>
+            </div>
+          </div>
+           <div class="container-fluid ml-3">
+            <a href="./whatsapp.html"><img src="./images/whatsapp.png" alt="" id="wap1"></a>
+          </div>
+         
+          <script>
+
+            // FORM VALIDATION
+
+             $("#last").click(function(){
+               var name=  $("#name").val();
+               var email=  $("#email").val();
+               var city=  $("#city").val();
+               var cellno=  $("#cellno").val();
+               var cnic=  $("#cnic").val();
+               var msg=  $("#checkbox").val();
+
+               if(name==""){
+                   $("#ld").html("Please give all information");
+                   $("#ld").css({
+                    "backgroundColor":"#b71540",
+                    "color":"white",
+                    "height":"35px",
+                    "width":"270px",
+                    "fontFamily":"cursive",
+                    "textAlign":"center",
+                    "borderRadius":"0px",
+                    "padding":"5px",
+                    "marginLeft":"40px",
+                    "transition":"1s"
+                   })
+                   return false;
+                }
+               else if(name.lenght<3){
+                   $("#ld").html("More than 2 letters");
+                   $("#ld").css({
+                    "backgroundColor":"#b71540",
+                    "color":"white",
+                    "height":"35px",
+                    "width":"270px",
+                    "fontFamily":"cursive",
+                    "textAlign":"center",
+                    "borderRadius":"0px",
+                    "padding":"5px",
+                    "marginLeft":"40px",
+                    "transition":"1s"
+                   })
+                   return false;
+                }
+                else if(email==""){
+                    $("#ld").html("Please give all information");
+                   $("#ld").css({
+                    "backgroundColor":"#b71540",
+                    "color":"white",
+                    "height":"35px",
+                    "width":"270px",
+                    "fontFamily":"cursive",
+                    "textAlign":"center",
+                    "borderRadius":"0px",
+                    "padding":"5px",
+                    "marginLeft":"40px",
+                    "transition":"1s"
+                   })
+                   return false;
+                }
+                else if(city==""){
+                    $("#ld").html("Please give all information");
+                   $("#ld").css({
+                    "backgroundColor":"#b71540",
+                    "color":"white",
+                    "height":"35px",
+                    "width":"270px",
+                    "fontFamily":"cursive",
+                    "textAlign":"center",
+                    "marginLeft":"40px",
+                    "borderRadius":"0px",
+                    "padding":"5px",
+                    "transition":"1s"
+                   })
+                   return false;
+                }
+                else if(cellno==""){
+                    $("#ld").html("Please give all information");
+                   $("#ld").css({
+                    "backgroundColor":"#b71540",
+                    "color":"white",
+                    "height":"35px",
+                    "width":"270px",
+                    "fontFamily":"cursive",
+                    "textAlign":"center",
+                    "borderRadius":"0px",
+                    "padding":"5px",
+                    "marginLeft":"40px",
+                    "transition":"1s"
+                   })
+                   return false;
+                }
+                else if(cnic==""){
+                    $("#ld").html("Please give all information");
+                   $("#ld").css({
+                    "backgroundColor":"#b71540",
+                    "color":"white",
+                    "height":"35px",
+                    "width":"270px",
+                    "fontFamily":"cursive",
+                    "textAlign":"center",
+                    "borderRadius":"0px",
+                    "padding":"5px",
+                    "marginLeft":"40px",
+                    "transition":"1s"
+                   })
+                   return false;
+                }
+                else if(msg==""){
+                    $("#ld").html("Please give all information");
+                   $("#ld").css({
+                    "backgroundColor":"#b71540",
+                    "color":"white",
+                    "height":"35px",
+                    "width":"270px",
+                    "fontFamily":"cursive",
+                    "textAlign":"center",
+                    "borderRadius":"0px",
+                    "padding":"5px",
+                    "marginLeft":"40px",
+                    "transition":"1s"
+                   })
+                   return false;
+                }
+                else{
+                   confirm("Send Message");
+                }
+            
+          
+             });
+          </script>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

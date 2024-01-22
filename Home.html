@@ -1,0 +1,1248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="./bootstrap.min.js"></script>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+/* NAVBAR */
+
+.header{
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 4px gray;
+}
+.header{
+   position: fixed;
+   top: 0;
+   z-index: 1000; 
+  
+}
+.header ul li ul li{
+list-style: none;
+
+}
+.header ul li ul li a{
+text-decoration: none;
+color: black;
+font-style: italic;
+font-weight: bold;
+font-family: cooper;
+
+}
+.header ul li ul li a:hover{
+color: #b71540;
+
+}
+
+.header .fa{
+color: #b71540;
+}
+ .anchor{
+    color:Black;
+    margin-left: 25px;
+    font-size: 18px;
+    font-family: cooper;
+   margin-top: 20px; 
+
+}
+.anchor:hover{
+  
+    color: #b71540;
+
+}
+.header span{
+color: #b71540;
+font-family: pristina;
+font-size: 50px;
+font-weight: bold;
+}
+.header{
+color: black;
+font-family: vardana;
+}
+.header small{
+font-family: pristina;
+color: #b71540;
+}
+/* BANNER 1 */
+
+.bg-image{
+    height: 570px;
+    width: 100%;
+    background-image: url(./images/building1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
+   .bg-image h4{
+   
+    color: black;
+    font-family: cooper;
+   
+   }
+   .bg-image h1{
+    padding-top: 200px;
+    font-family: algerian;
+    color: #b71540;
+    font-size: 50px;
+   }
+   .bg-image span{
+    font-family: pristina;
+    color: black;
+   }
+   .bg-image button{
+    height: 40px;
+    width: 150px;
+    border-radius: 30px;
+    color: #b71540;
+   
+    background-color: transparent;
+    border: 2px solid #b71540 ;
+   
+   }
+   .bg-image button:hover{
+    background-color:#b71540 ;
+    border: 2px solid #b71540;
+    color: white;
+    transition: 0.4s;
+    
+    
+   }
+   .div{
+    height: 570px;
+    width: 100%;
+   
+   }
+
+/* STATEMENT */
+
+    .statement{
+      margin-top: 80px;
+    }
+    .statement img{
+      height: 370px;
+      width: 100%;
+    }
+    .statement h1{
+      color:black;
+      font-family: vardana;
+      font-style: italic;
+      font-size: 50px;
+      
+    }
+   
+    .statement p{
+      font-family: cursive;
+      margin: 10px;
+      font-size: 18px;
+    }
+    .heading h2{
+      font-family: vardana;
+      font-style: italic;
+      color: #b71540 ;
+      text-align: center;
+      margin-top: 60px;
+      font-size: 37px;
+      border-bottom: 2px solid black;
+    }
+
+    /* SERVICES BUTTON */
+
+    .button{
+      margin-top: 50px;
+     
+     
+    }
+    .button button{
+      height: 70px;
+      width: 170px;
+      margin: auto;
+      margin-bottom: 50px;
+      margin-left: 30px;
+      background-color: white;
+    font-family: cursive;
+      text-align: center;
+      color: black;
+      /* border-radius: 20px; */
+      box-shadow: 1px 1px 2px gray ,1px 1px 2px gray;
+      border: 2px solid white;
+    }
+    .button button:hover{
+      box-shadow: 2px 2px 5px #b71540 ;
+    }
+   
+    .button .fa {
+      font-size: 20px;
+      color:#b71540 ;
+    }
+
+     /* BANNER 2 */
+
+   .banner h5{
+    text-align: center;
+    font-size: 35px;
+    font-family: cooper;
+    color: #b71540;
+    margin-top: 20px;
+   }
+   .banner img{
+    margin-top: 20px;
+   }
+    /* FEATURES */
+
+    .features-head h3{
+      margin-top: 60px;
+     color: #b71540;
+      font-size: 30px;
+      font-family: cursive;
+
+    }
+    .features img{
+      border-radius: 50%;
+      height: 90px;
+      width: 90px;
+      margin-top: 20px;
+      
+    }
+    .features h5{
+      margin-top: 20px;
+      font-family: cooper;
+      color: #b71540;
+      border-bottom: 1px solid rgb(87, 86, 86);
+    }
+    .features p{
+      font-family: cursive;
+      margin-top: 10px;
+    }
+
+    /* OTHER COMPANIES LINK */
+
+    .logo{
+      margin-top: 10px;
+    }
+    .logo p{
+ 
+      font-family: cursive;
+      color: #b71540;
+    }
+    .logo a{
+      color: black;
+      font-family: cursive;
+      margin-top: 20px;
+      
+    }
+    .logo img{
+      height: 150px;
+      width: 150px;
+     
+    }
+    .logo img:hover{
+      height: 160px;
+      width: 160px;
+    }
+    .logo a:hover{
+      color: #b71540;
+    }
+
+    /* CAROUSEL SLIDER */
+
+    .carousel{
+      margin-top: 70px;
+    }
+    .car-slide{
+      margin-top: 80px;
+    }
+    .car-slide img{
+      height: 400px;
+      width: 90%;
+      border-radius: 10px;
+    }
+    .car-slide h3{
+      font-family: vardana;
+      font-weight: bold;
+      font-style: italic;
+      font-size: 40px;
+      margin-bottom: 20px;
+      /* margin-top: 70px;*/
+      margin-left: 50px; 
+    }
+    .car-slide p{
+      font-size: 25px;
+      margin-left: 50px;
+      font-family: cursive;
+    }
+    .car-slide .c-btn{
+      height: 40px;
+      width: 130px;
+      margin-left: 60px;
+      margin-top: 30px;
+      border-radius: 20px;
+      color: #b71540;
+      background-color: white;
+      border: 1px solid#b71540;
+
+    }
+    .car-slide .c-btn:hover{
+      border:1px solid white;
+      color: white;
+      background-color: #b71540;
+    }
+    #car,#bike,#bus,#truck,#van{
+      height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: black;
+    margin-left: 10px;
+    font-family: cursive;
+    background-color: #ddd9d9;
+    border: none;
+   
+   
+   
+   }
+   
+   #car:hover,#bike:hover,#bus:hover,#truck:hover,#van:hover{
+   
+    color: #b71540;
+    transition: 0.4s;
+    
+    
+   } 
+   .car-slide h3{
+    color: #b71540;
+   }
+    
+
+   /* FAQS */
+
+   .faqs{
+    margin-top: 70px;
+    
+   }
+   .faqs h3{
+    font-family: cooper;
+    margin-top: 40px;
+    color: #b71540  ;
+   }
+   .faqs p{
+    display: none;
+    font-family: cursive;
+    margin-top: 30px;
+    margin-left: 30px;
+   
+   }
+   .faqs h5{
+    font-family: 'Times New Roman';
+    margin-left: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid #b71540;
+    cursor:pointer;
+   }
+   
+
+   .faqs img{
+    height: 350px;
+    width: 100%;
+   }
+  
+  
+
+   /* QUICK CONTACT INFO */
+
+   .c-info h4{
+    font-family: cooper;
+    margin-top: 70px;
+    color: #b71540;
+   }
+   .c-info .fa{
+    color: #b71540;
+   }
+   .c-info h5{
+    font-family: cursive;
+    margin-top: 20px;
+   }
+  
+
+   
+ 
+  /* MODAL FORM */
+   
+.modal-button{
+  height: 40px;
+        width: 150px;
+        border-radius: 20px;
+        border: 1px solid #b71540;
+        color:#b71540;
+        transition: 1s;
+        background-color: white;
+        display: none;
+}
+.modal-button:hover{
+        border: 1px solid white;
+        color:white ;
+        background-color: #b71540;
+    }
+    .modal h2{
+        font-family:fantasy;
+        color: #b71540;
+        
+    }
+    .modal label{
+        font-family: cursive;
+    }
+    .modal .btn{
+        color: #b71540;
+       background-color: white;
+       border: 2px solid #b71540;
+        border-radius: 20px;
+        font-family: cursive;
+        
+    }
+    .modal .btn:hover{
+        color: white;
+        background-color: #b71540;
+
+    }
+    .close{
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover,.close:focus{
+        color: #b71540;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+
+ /* WHATSAPP LOGO */
+
+   
+ #wap1{
+    font-size: 50px;
+    color: rgb(47, 204, 47);
+    position: fixed;
+    bottom:0;
+       z-index: 1000;
+       height: 70px;
+       width: 70px;
+  }
+
+  /* FOOTER */
+
+  .footer{
+    margin-top: 60px;
+  
+    color: white;
+    background-color: #b71540;
+   }
+   .footer h2{
+    font-family:vardana;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-top: 60px;
+   }
+   .footer p{
+    font-family: cursive;
+    font-size: 15px;
+    margin-bottom: 40px;
+   
+   }
+   .footer-end{
+    font-family: cursive;
+    font-size: 15px;
+    font-style: italic;
+   }
+   .footer ul li{
+    list-style: none;
+    padding: 5px;
+
+   }
+   .footer ul li a{
+    color: white;
+   
+    font-family:cursive;
+    display: inline-block;
+   }
+   .footer a{
+    color: black;
+    font-family: vardana;
+   }
+   .footer .fa{
+    margin-bottom: 20px;
+  margin-left: 30px;
+    color:white;
+ 
+    font-size: 40px;
+   }
+  
+  
+   @media(max-width:1199px){
+
+    /* PRODUCTS BUTTON */
+
+     .button button{
+      width: 200px;
+    }
+   }
+   @media(max-width:992px){
+    
+    /* NAVBAR */
+
+    .header ul li a{
+        font-size: 17px;
+        margin-left: 0px;
+    }
+
+    /* CAROUSEL SLIDER */
+
+  .carousel p{
+    font-size: 17px;
+  }
+  .carousel img{
+    height: 300px;
+  }
+
+  /* FOOTER */
+
+  .footer p{
+        font-size: 14px;
+    }
+   }
+   
+   @media (max-width:768px){
+
+          /* NAVBAR */
+          .header span{
+            font-size: 40px;
+        
+        }
+        .header h2{
+            font-size:18px;
+        }
+        .header ul li a{
+            font-size: 16px;
+          
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .header{
+            padding-top: 40px;
+            height: 120px;
+            padding-bottom: 20px;
+    }
+
+    /* CAROUSEL BUTTON */
+
+    #car,#bike,#bus,#truck,#van{
+      margin-left: 0px;
+    }
+
+    /* CAROUSEL SLIDER */
+
+    .carousel-item p{
+      margin-left: 0px;
+    }
+   }
+   @media(max-width:576px){
+
+/* NAVBAR */
+
+.header{
+    padding-top: 40px;
+    height: 120px;
+    padding-bottom: 20px;
+
+}
+.header ul li a{           
+     margin-left: 0px;
+        font-size: 14px;
+}
+
+/* BANNER 1
+ */
+.div h1{
+  font-size: 30px;
+}
+.div span{
+  font-size: 20px;
+}
+
+/* SERVICES BUTTON */
+
+.button{
+  margin: auto;
+  text-align: center;
+}
+
+/* CAROUSEL BUTTON */
+
+#car,#bike,#bus,#truck,#van{
+  width: 80px;
+}
+  /* MODAL FORM */
+
+  .modal{
+        width: 80%;
+        margin-left: 40px;
+    }
+    
+  /* FOOTER */
+
+  .footer{
+    text-align: center;
+  }
+  .footer h2{
+    margin-top: 30px;
+  }
+
+/* WHATSAPP LOGO */
+
+ #wap1{
+    
+    height: 60px;
+    width: 60px;
+ }
+   }
+
+  @media(max-width:410px){
+
+    /* NAVBAR */
+
+    .header ul li a{
+      font-size: 12px;
+    }
+
+    /* CAROUSEL BUTTON */
+
+    #car,#bike,#bus,#truck,#van{
+  width: 100px;
+}
+
+/* FAQS */
+
+.faqs img{
+  height: 300px;
+  width: 300px;
+}
+
+/* SERVICES TITLE HEADING */
+
+.heading h2{
+  font-size: 30px;
+}
+
+  }
+  @media (max-width:350px){
+
+    /* NAVBAR */
+
+    .header ul li a{
+      font-size:10px ;
+    }
+    /* BANNER 1 HEADING  COMPANY TITLE*/
+
+    .div h4,.div span{
+      font-size: 15px;
+    }
+    .div button{
+      height: 35px;
+      width: 130px;
+      font-size: 13px;
+    }
+
+    /* QUICK CONTACT INFO */
+
+    .c-info h5{
+      font-size: 16px;
+    }
+  }
+  @media (max-width:315px){
+
+    /* NAVBAR */
+
+    .header ul li a{
+      font-size: 8px;
+    }
+
+/* BANNER 1 TITLE  */
+
+    .heading h2{
+      font-size: 25px;
+    }
+
+    /* FEATURES HEADING */
+
+    .features-head h3{
+      font-size: 25px;
+    }
+
+    /* BANNER 2 TITLE */
+
+    .banner h5{
+      font-size: 25px;
+    }
+  }
+  </style>
+   
+  
+  <body>
+   
+    <!-- NAVBAR -->
+
+    <nav class="header navbar navbar-expand">
+      <div class=" container">
+     <div class="row">
+      <div class="col-md-5">
+        <h2 class="navbar-brand logo-icon text-center"><span>S</span>AFE <span>C</span>ARZ <small>Limited</small></h2> 
+      </div>
+      <div class="col-md-7">
+          <ul class="main navbar-nav ml-auto ">
+              <li class="nav-item"><a class="nav-link anchor" href="./Home.html"><b>HOME</b></a></li>
+              <li class="nav-item"><a class="nav-link anchor" href="./About1.html"><b>ABOUT</b></a></li>
+              <li class="nav-item dropdown"><a class="nav-link anchor dropdown-toggle" data-toggle="dropdown"  href=""><b>SERVICES</b></a>
+                  <ul class=" dropdown-menu bg-white">
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./car.html"><i class=" fa fa-solid fa-car"></i> &nbsp;&nbsp;Cars</a></li>
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Van.html"><i class=" fa fa-solid fa-van-shuttle"></i> &nbsp;&nbsp;Vans</a></li>
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Bus.html"><i class=" fa fa-solid fa-bus"></i> &nbsp;&nbsp;Buses</a></li>
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Bike.html"><i class=" fa fa-solid fa-motorcycle"></i> &nbsp;&nbsp;Bike</a></li>
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Truck.html"><i class=" fa fa-solid fa-truck"></i> &nbsp;&nbsp;Trucks</a></li>
+                  </ul></li>
+              <li class="nav-item"><a class="nav-link anchor" href="./Insurance Companies.html"><b>LINKS</b></a></li>
+              <li class="nav-item"><a class="nav-link anchor" href="./Contact1.html"><b>CONTACT</b></a></li>
+          </ul>
+      </div>
+  </div>
+  </div>
+    </nav>
+
+    <!-- BANNER IMAGE -->
+
+    <div class="bg-image text-center">
+      <div class="div">
+      <h1><b>SAFE CARZ <span>Limited</span></b></h1>
+      <h4>Secure Your Drive with <span><b>SAFE CARZ</b> </span></h4>
+      <a href="./Contact1.html"><button>Contact US</button></a>
+     
+
+      </div>
+    </div>
+
+
+      <div class=" container">
+       <div class=" row">
+        
+        <!-- STATEMENT -->
+       
+        <div class="statement  col-md-6 ">
+         <h1><b>OverView</b></h1>
+         <p>Motor insurance policies are designed to transfer the risks associated with the ownership of a vehicle to an insurer. Motor Third Party Liability is a regulated insurance product, which all vehicles on road must ensure to maintain valid whilst the vehicle is driven on road to protect themselves from liability. Whereas other products such as Motor Comprehensive and 3T (Total Loss, Theft & TPL) Insurance products are much wider designed to protect car owners for risk of own damage to their car, and liability.<p></div>
+          
+           <div class="statement  col-md-6 text-center">
+          <img src="./images/overview.jpg" alt="" >
+         
+        </div>
+        </div>
+      </div>
+
+      <!-- PRODUCTS BUTTON -->
+
+      <div class="container">
+        <div class="row">
+          <div class="heading col-12">
+            <h2><b>We are planning different Insurances for your Secure Drive</b></h2>
+           
+          </div>
+        </div>
+
+      
+
+        <div class="row">
+          <div class="button col-12 ">    
+           <a href="./car.html"> <button><i class="fa fa-solid fa-car"></i>&nbsp;&nbsp;Cars Insurance </button></a>
+            
+         
+          <a href="./Van.html">  <button><i class="fa fa-solid fa-van-shuttle"></i>&nbsp;&nbsp;Vans Insurance</button></a>
+            <a href="./Bus.html"><button><i class="fa fa-solid fa-bus"></i>&nbsp;&nbsp;Buses Insurance</button></a>
+         
+           <a href="./Bike.html"> <button><i class="fa fa-solid fa-motorcycle"></i>&nbsp;&nbsp;Bike Insurance</button></a>
+          <a href="./Truck.html">  <button><i class="fa fa-solid fa-truck"></i>&nbsp;&nbsp;Trucks Insurance</button></a>
+          </div>
+        </div>
+
+
+      </div> 
+
+      <!-- BANNER IMAGE 2 -->
+
+      <div class="banner container">
+        <h5>We are here for safe drive</h5>
+        <img src="./images/group image.jpeg" alt="" style="height: 400px; width: 100%;">
+        
+      </div>
+  <!-- FEATURES -->
+
+      <div class="container">
+        <div class="features-head row text-center">
+          <div class="col-12">
+          <h3 >Insurance Features</h3>
+          
+        </div>
+      </div>
+        <div class="features row">
+          <div class="col-md-2">
+            <img src="./images/legal complaince.jfif" alt="" class="text-center ">
+          </div>
+          <div class="col-md-10">
+            <h5>Legal Compliance:</h5>
+            <p>It is a legal requirement in many places to have vehicle insurance. Driving without insurance can lead to fines or legal consequences. Insurance ensures that you comply with the law.</p>
+          </div>
+        </div>
+          <div class="features row">
+            <div class="col-md-2">
+              <img src="./images/financial protection.jfif" alt="" class="text-center ">
+            </div>
+            <div class="col-md-10">
+              <h5>Financial Protection:</h5>
+            <p> In the event of an accident, vehicle insurance covers the cost of repairs to your car. This financial protection is crucial, especially in the case of major accidents that can result in substantial repair expenses.</p>
+            </div>
+          </div>
+            <div class="features row">
+              <div class="col-md-2">
+                <img src="./images/theft coverage.jfif" alt="" class="text-center ">
+              </div>
+              <div class="col-10">
+                <h5>Coverage for Theft and Vandalism: </h5>
+                <p>Insurance protects your vehicle against theft, burglary, or vandalism. If your vehicle is stolen or damaged due to these reasons, insurance can help cover the losses.</p>
+              </div>
+            </div>
+            <div class="features row">
+              <div class="col-md-2">
+                <img src="./images/ncb.jpg" alt="" class="text-center ">
+              </div>
+              <div class="col-md-10">
+                <h5>No-Claim Bonus (NCB):</h5>
+            <p>If you don't make any claims during the policy period, you may be eligible for a no-claim bonus. This can lead to a discount on your premium during the policy renewal.</p>
+              </div>
+            </div>
+            <div class="features row">
+              <div class="col-md-2">
+                <img src="./images/tpl.webp" alt="" class="text-center ">
+              </div>
+              <div class="col-md-10">
+                <h5>Third Party Liability</h5>
+                <p>It is a legal requirement in many places to have vehicle insurance. Driving without insurance can lead to fines or legal consequences. Insurance ensures that you comply with the law.</p>
+              </div>
+            </div>
+            <div class="features row">
+              <div class="row">
+                <div class="col-12">
+                  <p>Having vehicle insurance not only protects you from financial losses but also provides peace of mind while on the road, knowing that you have coverage in case of unforeseen events.</p>
+                </div>
+              </div>
+            </div>
+       
+        
+      </div>
+      
+      <!-- LINKS -->
+
+      <div class="logo container">
+        <div class="row text-center">
+          <div class="col-md-4 ">
+            <a href="https://www.jubileelife.com/" target="_blank"><img src="./images/jubliee-removebg-preview.png" alt="Jubilee logo"></a>
+            <p>Jubilee Life Insurance Company Limited (the Company) was incorporated in Pakistan on June 29, 1995 as a Public Limited Company under the Companies Ordinance, 1984. The Company started its business on June 20, 1996.</p>
+          </div>
+          <div class="col-md-4">
+            <a href="https://igiinsurance.com.pk/" target="_blank"><img src="./images/igi-removebg-preview.png" alt="IGI logo" ></a>
+            <p>IGI General Insurance Ltd is a flagship enterprise of the Packages Group. Headquartered in Karachi, we have offices in 9 cities nationwide to provide prompt services to the customers. We have been awarded “AA” IFS rating by PACRA for 9 consecutive years authenticating our financial strength and stability.
+
+            </p>
+          </div>
+          <div class="col-md-4">
+           <a href="https://pk.linkedin.com/company/spi-insurance-company-ltd" target="_blank"><img src="./images/SPI-removebg-preview.png" alt="SPI logo" ></a>
+            <p>Single Premium Immediate (SPI) Insurance involves a one-time payment, and in return, you start receiving regular income immediately for a specified period or for life. It's a type of annuity with no accumulation phase and is designed for those seeking immediate payouts and income security.</p>
+          </div>
+          <a href="./Insurance Companies.html">More Details</a>
+        </div>
+      </div>
+
+      <!-- CAROUSEL-SLIDER -->
+
+      <div class=" car-slide container">
+        
+          <div class="carousel slide" data-ride="carousel" id="slider">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="2000">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="./images/car slider.jpg" alt="">
+                  </div>
+                  <div class="col-md-7 ">
+                    <h3 >Car Insurance</h3>
+                    <p>Drive worry-free with our comprehensive Car insurance coverage. Protect your vehicle from unforeseen events, accidents, and theft. Click the 'Details' button below to explore our coverage options and ensure a secure journey on the road."</p>
+                <a href="./car.html">    <button class="c-btn">Detail</button></a>
+
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item" data-interval="2000">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="./images/bike slider.cms" alt="">
+                  </div>
+                  <div class="col-md-7">
+                    <h3 >Bike Insurance</h3>
+                    <p>Drive worry-free with our comprehensive Bike insurance coverage. Protect your vehicle from unforeseen events, accidents, and theft. Click the 'Details' button below to explore our coverage options and ensure a secure journey on the road."</p>
+                   <a href="./Bike.html"> <button class="c-btn">Detail</button></a>
+
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item"  data-interval="2000">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="./images/bus hand.jpeg" alt="">
+                  </div>
+                  <div class="col-md-7">
+                    <h3>Buses Insurance</h3>
+                    <p>Drive worry-free with our comprehensive Bus insurance coverage. Protect your vehicle from unforeseen events, accidents, and theft. Click the 'Details' button below to explore our coverage options and ensure a secure journey on the road."</p>
+                 <a href="./Bus.html">   <button class="c-btn">Detail</button></a>
+
+                  </div>
+                  </div>
+              </div>
+              <div class="carousel-item"  data-interval="2000">
+                <div class="row">
+                  <div class="col-md-5">
+                    <img src="./images/truck slider.jfif" alt="">
+                  </div>
+                  <div class="col-md-7">
+                    <h3 >Trucks Insurance</h3>
+                    <p>Drive worry-free with our comprehensive Truck insurance coverage. Protect your vehicle from unforeseen events, accidents, and theft. Click the 'Details' button below to explore our coverage options and ensure a secure journey on the road."</p>
+                   <a href="./Truck.html"> <button class="c-btn">Detail</button></a>
+
+                  </div>
+                  </div>
+              </div>
+             
+              <div class="carousel-item "  data-interval="2000">
+                <div class="row">
+                  <div class="col-md-5 ">
+                    <img src="./images/van slider.jpg" alt="">
+                  </div>
+                  <div class="col-md-7">
+                    <h3>Vans Insurance</h3>
+                    <p>Drive worry-free with our comprehensive Van insurance coverage. Protect your vehicle from unforeseen events, accidents, and theft. Click the 'Details' button below to explore our coverage options and ensure a secure journey on the road."</p>
+             <a href="./Van.html">       <button class="c-btn">Detail</button></a>
+
+                  </div>
+                  </div>
+              </div>
+            </div>
+           
+         <!-- SLIDER-BUTTON -->
+
+          <div class="row btn-row text-center">
+            <div class="col-12">
+        <button id="car">Car</button>
+        <button id="bike">Bike</button>
+        <button id="bus">Bus</button>
+        <button id="truck">Truck</button>
+        <button id="van">Van</button>
+      </div>
+    </div>
+    </div>
+      </div>
+
+      <!-- FAQS -->
+
+      <div class=" faqs container">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./images/faqs1.jpg" alt="">
+          </div>
+          <div class="col-md-7 ">
+            <h3 class="text-center">Frequently Asked Questions (FAQs)</h3>
+            <h5 id="head1"> How is the insurance premium calculated? </h5>
+            <p id="para1">The insurance premium is calculated based on several factors, including the vehicle's make and model, manufacturing year, your driving history, and the coverage options you choose. Insurance companies use complex algorithms to assess risk and determine the appropriate premium.</p>
+            <h5 id="head2">What type of coverage are available here  ? </h5>
+            <p id="para2">There are different types of coverage, including liability coverage, comprehensive coverage, collision coverage, and more. Liability coverage typically covers damage to others in an accident, while comprehensive and collision coverage can protect your vehicle from various types of damage.</p>
+            <h5 id="head3"> How does the claims process work here?</h5>
+            <p id="para3">In the event of an accident or damage, you should contact your insurance provider as soon as possible. They will guide you through the claims process, which typically involves providing details of the incident, submitting relevant documents, and, if necessary, having an assessment of the damage conducted.</p>
+
+            <button data-target="#mod" data-toggle="modal" class="modal-button" id="para5">Get Help</button>
+            <h5 id="head4"> Can I transfer my insurance to new vehicle?</h5>
+            <p id="para4">When you acquire a new vehicle, you can seamlessly transfer your existing insurance. Notify your insurance provider about the change, and they will guide you through the process. This involves adjusting coverage and premiums based on the specifications of your new vehicle. It's essential to inform your insurer promptly to ensure continuous and appropriate coverage for your updated automotive asset.</p>
+
+          </div>
+        </div>
+      </div>
+        <!-- CLAIM MODAL FORM -->
+ 
+    <div class="container" id="modal1">
+      <div class="row">
+          <div class="col-md-4">
+              <div class="modal fade" id="mod" data-backdrop="static" data-keyboard="false">
+                  <div class="modal-dialog">
+                      <div class="modal-content">
+                          <div class="modal-header">
+                          
+                             
+                                  <h2>Claim Form  </h2>
+                                 <button type="button" data-dismiss="modal" class="close">&times;</button>
+                          </div>
+                          <div class="modal-body">
+                              <form action="">
+                                  <label for="">Name</label>
+                                  <input type="text" name="" id="m-name" class="form-control">
+                                  <div id="md1"></div>
+                                  <label for="">Email</label>
+                                  <input type="email" name="" id="m-email" class="form-control">
+                                  <div id="md2"></div>
+                                  <label for="">Product</label>
+                                  <input type="text" name="" id="m-product" class="form-control">
+                                  <div id="md3"></div>
+                                  <label for="">Policy No</label>
+                                  <input type="number" name="" id="m-policy" class="form-control">
+                                  <div id="md4"></div>
+                                  <label for="">Incident Date</label>
+                                  <input type="date" name="" id="m-date" class="form-control">
+                                  <div id="md5"></div>
+                                  <label for="">Incident Detail</label><br>
+                                  <textarea name="" id="m-detail" cols="30" rows="10" class="form-control"></textarea>
+                                  <div id="md6" ></div>
+                              <div class="modal-footer justify-content-center">
+                                  <input type="submit" value="Submit" data-dismiss="modal" class="btn btn-block" id="mb">
+                              
+                              </div>
+                              </form>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- CONTACT -->
+      <div class="c-info container text-center">
+        <h4>For more Information you can contact Us:</h4>
+         <h5><i class="fa fa-solid fa-phone"></i> Mob: (+44) 123 456 789</h5>
+        <h5><i class="fa fa-solid fa-envelope"></i> Email: safecarz@gmail.com</h5>
+      
+      </div>
+
+      <!-- FOOTER -->
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <h2>Safe Carz Limited </h2>
+              <p>Your trusted partner in automotive safety. At Safe Carz, we specialize in providing comprehensive solutions for vehicle safety, offering a range of services from reliable insurance coverage to state-of-the-art security systems. Drive with confidence, drive with Safe Carz."</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h2>Our  Services</h2>
+              <ul>
+                <li><a href="./car.html">Car</a></li>
+                <li><a href="./Bus.html">Buses</a></li>
+                <li><a href="./Truck.html">Trucks</a></li>
+                <li><a href="./Van.html">Vans</a></li>
+                <li><a href="./Bike.html">Bike</a></li>
+       
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h2> Insurance Companies</h2>
+              <ul>
+                <li><a href="https://www.jubileelife.com/" target="_blank">Jubilee Insurance Company</a></li>
+                <li><a href="https://igiinsurance.com.pk/" target="_blank">IGI Insurance Company</a></li>
+                <li><a href="https://www.nationwide.com/" target="_blank">Nationwide Insurance</a></li>
+                <li><a href="http://pil.com.pk" target="_blank">Premier Insurance</a></li>
+                <a href="./Insurance Companies.html">More Detail</a>
+              </ul>
+              
+            </div>
+            <div class="col-md-3 col-sm-6">
+             <h2>Contact Info</h2>
+             <p>66 Guild Street 512B, Great North Town.</p>
+             <h6>Phone</h6>
+             <p>(+44) 123 456 789
+              <br>+ (124) 1523-567-9874
+             </p>
+             <h6>Email</h6>
+             <p>safecarz@gmail.com
+              <br>
+              info@gmail.com</p>
+            
+            </div>
+            <i class=" fa fa-brands fa-facebook" id="fb"></i>
+            <i class="fa fa-brands fa-whatsapp" id="wap"></i>
+            <i class="fa fa-brands fa-twitter" id="twit"></i>
+          </div>
+          
+        </div>
+      </div>
+      <div class="footer-end text-center">
+        <div class="container">
+          <p>&copy  Safe Carz Limited| All Right Reserved | 2000</p>
+        </div>
+      </div>
+      <script>
+
+        // FAQS Toggle
+
+        $("#head1").click(function(){
+          $("#para1").toggle()
+        });
+        $("#head2").click(function(){
+          $("#para2").toggle()
+        });
+        $("#head3").click(function(){
+          $("#para3").toggle()
+        });
+        $("#head4").click(function(){
+          $("#para4").toggle()
+        });
+        $("#head3").click(function(){
+          $("#para5").toggle()
+        });
+       
+
+        // MODAL FORM VALIDATION
+
+        $("#mb").click(function(){
+    var mname=$("#m-name").val();
+    var memail=$("#m-email").val();
+    var mproduct=$("#m-product").val();
+    var mpolicy=$("#m-policy").val();
+    var mdate=$("#m-date").val();
+    var mdetail=$("#m-detail").val();
+
+    if(mname==""){
+        $("#md6").html("Please give all information");
+        $("#md6").css({
+                    "backgroundColor":"#b71540",
+                    "color":"white",
+                    "height":"35px",
+                    "width":"270px",
+                    "fontFamily":"cursive",
+                    "textAlign":"center",
+                    "borderRadius":"0px",
+                    "padding":"5px",
+                    "transition":"1s",
+                    "marginTop":"20px",
+                     "marginLeft":"80px"
+                    
+                   });
+                   return false;
+    }
+    else if(mname.lenght>3){
+        $("#md6").html("More than 2 characters");
+        $("#md6").css({
+            "color":"#b71540",
+            "fontFamily":"cursive",
+            "fontSize":""
+        });
+        return false;
+    }
+else if(memail==""){
+    $("#md6").html("Please give all information");
+        $("#md6").css({
+            "color":"#b71540",
+            "fontFamily":"cursive",
+            "fontSize":""
+        });
+        return false;
+}
+else if(mproduct==""){
+    $("#md6").html("Please give all information");
+        $("#md6").css({
+            "color":"#b71540",
+            "fontFamily":"cursive",
+            "fontSize":""
+        });
+        return false;
+}
+else if(mpolicy==""){
+    $("#md6").html("Please give all information");
+        $("#md6").css({
+            "color":"#b71540",
+            "fontFamily":"cursive",
+            "fontSize":""
+        });
+        return false;
+}
+else if(mdate==""){
+    $("#md6").html("Please give all information");
+        $("#md6").css({
+            "color":"#b71540",
+            "fontFamily":"cursive",
+            "fontSize":""
+        });
+        return false;
+}
+else if(mdetail==""){
+    $("#md6").html("Please give all information");
+        $("#md6").css({
+            "color":"#b71540",
+            "fontFamily":"cursive",
+            "fontSize":""
+        })
+        return false;
+}
+else{
+    confirm("Send");
+}
+});
+
+//CAROUSEL NUMBER
+
+$("#car").click(function(){
+  $("#slider").carousel(0);
+});
+$("#bike").click(function(){
+  $("#slider").carousel(1);
+});
+$("#bus").click(function(){
+  $("#slider").carousel(2);
+});
+$("#truck").click(function(){
+  $("#slider").carousel(3);
+});
+$("#van").click(function(){
+  $("#slider").carousel(4);
+});
+
+      </script>
+         <!-- WHATSAPP LOGO -->
+    
+     <div class="container-fluid ml-3">
+      <a href="./whatsapp.html"><img src="./images/whatsapp.png" alt="" id="wap1"></a>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

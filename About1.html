@@ -1,0 +1,914 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <script src="./jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+  /* NAVBAR */
+
+
+  .header{
+      height: 70px;
+      width: 100%;
+      background-color: white;
+      box-shadow: 2px 2px 4px gray;
+    }
+    .header{
+       position: fixed;
+       top: 0;
+       z-index: 1000; 
+      
+    }
+    .header ul li ul li{
+    list-style: none;
+   }
+   .header ul li ul li a{
+text-decoration: none;
+color: black;
+font-style: italic;
+font-weight: bold;
+font-family: cooper;
+
+}
+.header ul li ul li a:hover{
+color: #b71540;
+
+}
+   .header .fa{
+    color: #b71540;
+   }
+     .anchor{
+        color:Black;
+        margin-left: 25px;
+        font-size: 18px;
+        font-family: cooper;
+       margin-top: 30px; 
+
+    }
+    .anchor:hover{
+      
+        color: #b71540;
+
+    }
+    .header span{
+    color: #b71540;
+    font-family: pristina;
+    font-size: 60px;
+    font-weight: bold;
+   }
+   
+   .header{
+    color: black;
+    font-family: cooper;
+    font-size: 25px;
+   }
+   .header small{
+    font-family: pristina;
+    color: #b71540;
+    font-size: 16px;
+    font-weight: bold;
+   }
+   
+   /* ABOUT */
+
+    .about{
+        margin-top: 150px;
+        background-color: white;
+       
+    }
+    .about h1{
+        border-bottom: 2px solid black;
+        margin-bottom: 20px;
+        font-size: 50px;
+        font-family:cooper;
+        color:#b71540;
+    }
+  
+    .aboutus{
+      margin-top: 50px;
+    }
+    .aboutus h2{
+      color: #b71540;
+      font-family: vardana;
+      font-style: italic;
+    }
+    .aboutus p,.aboutus ul{
+      font-family: cursive;
+    }
+    .aboutus .img11{
+      width: 400px;
+    }
+    .aboutus .img12{
+      width: 320px;
+    }
+   /* RADIO BUTTON */
+     .name{
+      font-family: cursive;
+     color: #b71540;
+    }
+    .radio 
+    .gs {
+      margin-top: 50px;
+    }
+    .gs p{
+      margin-bottom: 60px;
+      font-family: cursive;
+    }
+    .gs h6{
+      font-size: 20px;
+      font-family: cursive;
+      border-bottom: 1px solid black;
+    }
+    .gs h1{
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-family: cooper;
+      color: #b71540;
+    }
+    .heading{
+      margin-top: 50px;
+      margin-bottom: 20px;
+      color: #b71540;
+       font-family: vardana;
+       font-weight: bold;
+      
+     
+    }
+    
+   .img1 img,.img2 img,.img3 img,.img4 img,.img5 img{
+    height: 400px;
+      width: 100%;
+  }
+   #row2,#row3,#row4,#row5{
+    display: none;
+   }
+   .radio-inputs {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      border-radius: 0.5rem;
+      background-color: #EEE;
+      box-sizing: border-box;
+      box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+      padding: 0.25rem;
+      width: 300px;
+      font-size: 14px;
+    }
+
+    .radio-inputs .radio {
+      flex: 1 1 auto;
+      text-align: center;
+    }
+
+    .radio-inputs .radio input {
+      display: none;
+    }
+
+    .radio-inputs .radio .name {
+      display: flex;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.5rem;
+      border: none;
+      padding: .5rem 0;
+      color: rgba(51, 65, 85, 1);
+      transition: all .15s ease-in-out;
+    }
+
+    .radio-inputs .radio input:checked+.name {
+      background-color: #fff;
+      font-weight: 600;
+      color: #b71540;
+    }
+
+    /* SERVICES */
+
+    .parent{
+        height:250px;
+        width:315px;
+        border: 0px solid black;
+        margin: auto;
+        margin-top: 50px;
+        position: relative;
+        overflow: hidden;
+        float: left;
+        
+        
+    }
+    .parent img{
+        height: 100%;
+        width: 100%;
+    }
+    .parent .child{
+        border: 0px solid black;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: aliceblue;
+        position: absolute;
+        top: 100%;
+        height: 100%;
+        padding: 20px;
+        left: 0%;
+        width: 100%;
+        transition: all 1s;
+        
+    }
+    .child p{
+        font-family: cursive;
+        font-size: 15px;
+    }
+    .child h3{
+        font-family:pristina;
+        color:white;
+    
+    }
+    .parent:hover .child
+    {
+        top: 0;
+    }
+    .child button{
+        height: 30px;
+        width: 100px;
+        background: transparent;
+        color: white;
+    }
+    .services{
+        margin-top: 60px;
+    }
+    .services h2{
+        font-family: vardana;
+        font-size: 45px;
+        font-style: italic;
+        text-align: center;
+        color: #b71540;
+        border-bottom: 2px solid black;
+    }
+    .services a{
+        text-decoration: none;
+        font-family: cursive;
+        display: inline-block;
+        margin-top: 20px;
+        color: black;
+    }
+    .services a:hover{
+        color:#b71540;
+    }
+    .services h4{
+        text-align: center;
+        
+    }
+   
+.h10,.m6{
+  font-family: cursive;
+}
+
+/* FOOTER */
+
+.footer{
+    margin-top: 60px;
+  
+    color: white;
+    background-color: #b71540;
+   }
+   .footer h2{
+    font-family:vardana;
+    font-style: italic;
+    margin-bottom: 20px;
+    margin-top: 60px;
+   }
+   .footer p{
+    font-family: cursive;
+    font-size: 15px;
+    margin-bottom: 40px;
+   
+   }
+   .footer-end{
+    font-family: cursive;
+    font-size: 15px;
+    font-style: italic;
+   }
+   .footer ul li{
+    list-style: none;
+    padding: 5px;
+
+   }
+   .footer ul li a{
+    color: white;
+  
+    font-family:cursive;
+    display: inline-block;
+   }
+   .footer a{
+    color: black;
+    font-family: vardana;
+   }
+   .footer .fa{
+    margin-bottom: 20px;
+  margin-left: 30px;
+    color:white;
+ 
+    font-size: 40px;
+   }
+
+   /* WHATSAPP LOGO */
+   #wap1{
+    font-size: 50px;
+    color: rgb(47, 204, 47);
+    position: fixed;
+    bottom:0;
+       z-index: 1000;
+       height: 70px;
+       width: 70px;
+  }
+    
+  @media(max-width:1199px){
+
+    /* ABOUT IMAGES */
+
+    .aboutus .img11{
+      width: 340px;
+
+    }
+    .aboutus .img12{
+      width: 260px;
+    }
+   
+  }
+  @media (max-width:992px){
+
+/* NAVBAR */
+
+.header ul li a{
+    font-size: 17px;
+    margin-left: 0px;
+}
+.aboutus .img11{
+  width: 210px;
+}
+.aboutus .img12{
+  width: 170px;
+}
+
+  }
+
+  @media (max-width:768px){
+         /* NAVBAR */
+         .header span{
+            font-size: 40px;
+        
+        }
+        .header h2{
+            font-size:18px;
+        }
+        .header ul li a{
+            font-size: 16px;
+          
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .header{
+            padding-top: 40px;
+            height: 120px;
+            padding-bottom: 20px;
+    }
+    /* ABOUT */
+
+    .about h1{
+      font-size: 40px;
+      margin-top: 40px;
+      
+    }
+    .aboutus{
+      margin-top: 20px;
+    }
+    
+     .aboutus .img11{
+width: 200px;
+margin-top: 20px;
+height: 450px;
+
+    }
+    .aboutus .img12{
+      width: 180px;
+      height: 300px;
+    }
+    .gs{
+      margin-top: 50px;
+    }
+      /* SERVICES */
+
+      .parent{
+            height: 300px;
+            width: 300px;
+          margin-left: 10px;
+            margin-top: 30px;
+            
+        }
+        .child p{
+            font-size: 13px;
+        }
+     
+        .services a{
+            font-size: 18px ;
+            margin-left: 0px;
+        }
+  }
+  @media(max-width:576px){
+    
+   /* NAVBAR */
+
+.header{
+    padding-top: 40px;
+    height: 120px;
+    padding-bottom: 20px;
+
+}
+.header ul li a{           
+     margin-left: 0px;
+        font-size: 14px;
+}
+/* 
+ABOUT */
+        .aboutus{
+          margin-left: 20px;
+        }
+        .aboutus .img11{
+          width: 220px;
+        }
+        .aboutus .img12{
+          width: 180px;
+        }
+       .h10,.m6{
+          margin-left: 20px;
+        }
+        /* RADIO IMAGES */
+        .img1 img,.img2 img,.img3 img,.img4 img,.img5 img{
+    height: 300px;
+      width: 100%;
+         
+        }
+
+        /* SERVICES */
+        .services h2{
+    font-size: 35px;
+  }
+  .services a{
+    margin-top: 30px;
+   
+    
+  }
+  .parent{
+   
+    height: 250px;
+    width: 390px;
+    margin-left: 40px;
+  }/* FOOTER */
+
+  .footer{
+    text-align: center;
+  }
+  .footer h2{
+    margin-top: 30px;
+  }
+
+/* WHATSAPP LOGO */
+
+ #wap1{
+    
+    height: 60px;
+    width: 60px;
+ }
+  }
+
+  @media (max-width:410px){
+    
+    /* NAVBAR */
+
+    .header ul li a{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width:470px){
+
+    /* ABOUT IMAGES */
+
+    .aboutus .img11{
+      height: 250px;
+      width: 80%;
+      margin: auto;
+    }
+    .aboutus .img12{
+      height: 250px;
+      width: 80%;
+      margin: auto;
+      margin-top: 40px;
+    }
+   
+    
+       /* SERVICES */
+
+       .parent{
+            width: 300px;
+            margin-left: 15px;
+        }
+
+  }
+  @media (max-width:350px){
+
+    /* SERVICES */
+
+    .parent{
+      margin-left: 0px;
+    }
+
+    /* NAVBAR */
+
+    .header ul li a{
+      font-size: 10px;
+    }
+  }
+  @media (max-width:315px){
+
+/* NAVBAR */
+
+.header ul li a{
+  font-size: 8px;
+}
+
+/* SERVICES */
+
+.parent{
+  width: 250px;
+}
+
+/* RADIO BUTTONS */
+
+.radio-inputs{
+  width:250px;
+}
+  }
+  </style>
+  
+  <body >
+    <nav class="header navbar navbar-expand">
+      <div class=" container">
+     <div class="row">
+      <div class="col-md-5">
+        <h2 class="navbar-brand logo-icon text-center"><span>S</span>AFE <span>C</span>ARZ <small>Limited</small></h2> 
+      </div>
+      <div class="col-md-7">
+          <ul class="main navbar-nav ml-auto ">
+              <li class="nav-item"><a class="nav-link anchor" href="./Home.html"><b>HOME</b></a></li>
+              <li class="nav-item"><a class="nav-link anchor" href="./About1.html"><b>ABOUT</b></a></li>
+              <li class="nav-item dropdown"><a class="nav-link anchor dropdown-toggle" data-toggle="dropdown"  href=""><b>SERVICES</b></a>
+                  <ul class=" dropdown-menu bg-white">
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./car.html"><i class=" fa fa-solid fa-car"></i> &nbsp;&nbsp;Cars</a></li>
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Van.html"><i class=" fa fa-solid fa-van-shuttle"></i> &nbsp;&nbsp;Vans</a></li>
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Bus.html"><i class=" fa fa-solid fa-bus"></i> &nbsp;&nbsp;Buses</a></li>
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Bike.html"><i class=" fa fa-solid fa-motorcycle"></i> &nbsp;&nbsp;Bike</a></li>
+                      <li class="dropdown-item bg-white"><a class="dropdown-link" href="./Truck.html"><i class=" fa fa-solid fa-truck"></i> &nbsp;&nbsp;Trucks</a></li>
+                  </ul></li>
+              <li class="nav-item"><a class="nav-link anchor" href="./Insurance Companies.html"><b>LINKS</b></a></li>
+              <li class="nav-item"><a class="nav-link anchor" href="./Contact1.html"><b>CONTACT</b></a></li>
+          </ul>
+      </div>
+  </div>
+  </div>
+    </nav>
+
+      <div class="container about">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>About Us</h1>
+            </div>
+        </div>
+        <div class="row aboutus">
+            <div class="col-lg-4 col-md-5">
+                <h2><b>Assist customers with arriving at the objectives.</b></h2>
+    <p >Assisting customers in achieving their objectives is at the core of Safe carz Limited's mission. Our dedicated team is committed to providing personalized support and guidance to ensure that each customer not only meets but exceeds their goals. Through collaborative efforts, tailored solutions, and a focus on customer success, we are devoted to being a reliable partner in our customers' journey towards achieving their objectives.</p>
+    <ul style="list-style-type:square;">
+      <li>Persinalized Guidance.</li>
+      <li>Colaborative Solution</li>
+      <li>Continuous Support</li>
+    </ul>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <img src="./images/building3.jpg" alt="" class="img11">
+    <img src="./images/about-03 (1).jpg" alt="" class="img12" >
+            </div>
+        </div>
+      </div>
+      <div class="container gs">
+       <div class="row">
+        <div class="col-12">
+            <h6>Great Story</h6>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-12">
+            <h1>We Have A Great History</h1>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-12">
+          <p>Welcome to Safe carz Limited, your trusted partner in safeguarding your journeys. At Safe Carz Limited, we understand the importance of protecting what matters most to you – your vehicles and your peace of mind.
+
+            We are committed to providing reliable and comprehensive insurance solutions tailored to meet your unique needs. Our mission is to offer peace of mind through transparent, customer-centric services that prioritize your safety and satisfaction.</p>
+        </div>
+       </div>
+
+      </div>
+
+
+      <!-- Rabio Buttons -->
+      <div class="container">
+      
+        <div class="radio-inputs">
+          <label class="radio">
+            <input type="radio" name="radio" checked="" id="m1" >
+            <span class="name ">2000</span>
+          </label>
+          <label class="radio">
+            <input type="radio" name="radio"  id="m2">
+            <span class="name">2005</span>
+          </label>
+        
+          <label class="radio">
+            <input type="radio" name="radio" id="m3">
+            <span class="name">2010</span>
+          </label>
+          <label class="radio" >
+            <input type="radio" name="radio"id="m4">
+            <span class="name ">2015</span>
+          </label>
+          <label class="radio" >
+            <input type="radio" name="radio"id="m5">
+            <span class="name">2023</span>
+          </label>
+        </div>
+       </div>
+       <div class="container " id="row1">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="heading">Established Secure</h2>
+            <p class="m6">At Safe Carz Limited, we go beyond insurance; we empower you to "Establish Secure" on every journey. Our commitment to your safety and peace of mind is reflected in every aspect of our services.</p>
+              <ul class="h10" >
+                <li>Life time supports</li>
+                <li>Solve your problem with us</li>
+                <li>We Provide Awesome Services</li>
+                <li>Your vehicles deserves best coverage</li>
+              </ul>
+          </div>
+          <div class="col-md-7 img1">
+            <img src="./images/establish secure.jpg" alt="">
+          </div>
+        </div>
+       </div>
+       <div class="container" id="row2">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="heading">Registered as a Company</h2>
+            <p class="m6">A publicly listed company established in 2000, Safe carz Limited Insurance provides a wide range of property casualty insurance to support its esteemed clients in his valuable vehicles.Our goal is to make our customer journey as smooth as possible with solutions that are inclusive, economical and tailored according to the needs of the clients. 
+            </p>
+              
+          </div>
+          <div class="col-md-7 img2">
+            <img src="images/history2.jpg" alt="">
+          </div>
+        </div>
+       </div>
+       <div class="container" id="row3">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="heading">Launch a new branch</h2>
+            <p class="m6">In 2010, Safe Carz Limited proudly expanded its footprint with the launch of a new branch in Islamabad. This strategic move allowed us to bring our comprehensive insurance solutions to the heart of the capital, catering to the unique needs of businesses in the region. The Islamabad branch embodies our commitment to local engagement, offering not only insurance services but also actively contributing to the growth and well-being of the community. </p>
+              
+          </div>
+          <div class="col-md-7 img3">
+            <img src="./images/history3.jpg" alt="">
+          </div>
+        </div>
+       </div>
+       <div class="container" id="row4">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="heading">Strategic plans</h2>
+            <p class="m6">in line with our commitment to excellence, [safe Carz Limited ] has developed strategic plans focused on improving service delivery, technology integration, and customer engagement. These initiatives are designed to keep us at the forefront of industry trends, ensuring our services remain innovative and responsive to our clients' needs. Through these strategic efforts, we aim to foster sustained growth, strengthen our market position, and maintain our reputation as a forward-thinking and reliable partner.</p>
+              
+          </div>
+          <div class="col-md-7 img4">
+            <img src="./images/history4.jpg" alt="">
+          </div>
+        </div>
+       </div>
+       <div class="container" id="row5">
+        <div class="row">
+          <div class="col-md-5">
+            <h2 class="heading">Award Win</h2>
+            <p class="m6">We are honored to announce that Safe carz Limited has been recognized with prestigious awards, a testament to our unwavering commitment to excellence. These accolades underscore our dedication to providing outstanding services, innovative solutions, and a steadfast focus on customer satisfaction. We take pride in these achievements, and they inspire us to continue raising the bar, ensuring that our clients receive nothing but the best in the realm of [industry/service]</p>
+             
+          </div>
+          <div class="col-md-7 img5">
+            <img src="./images/history5.jpg" alt="">
+          </div>
+        </div>
+       </div>
+
+ <script>
+
+  $("#m1").click(function(){
+    $("#row1").show();
+    $("#row2").hide();
+    $("#row3").hide();
+    $("#row4").hide();
+    $("#row5").hide();
+
+  });
+  $("#m2").click(function(){
+    $("#row2").show();
+    $("#row1").hide();
+    $("#row3").hide();
+    $("#row4").hide();
+    $("#row5").hide();
+  });
+  $("#m3").click(function(){
+    $("#row3").show();
+    $("#row1").hide();
+    $("#row2").hide();
+    $("#row4").hide();
+    $("#row5").hide();
+  });
+  $("#m4").click(function(){
+    $("#row4").show();
+    $("#row1").hide();
+    $("#row2").hide();
+    $("#row3").hide();
+    $("#row5").hide();
+  });
+  $("#m5").click(function(){
+    $("#row5").show();
+    $("#row1").hide();
+    $("#row2").hide();
+    $("#row3").hide();
+    $("#row4").hide();
+  });
+</script>
+
+
+
+      
+    <div class="container services">
+      <div class="row">
+          <div class="col-12">
+              <h2><b>Our Services</b></h2>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <div class="parent text-center">
+            <img src="./images/bike insurance.jpg" alt="">
+            <div class="child text-center">
+                <h3>Bike Insurance</h3>
+                <p>Securing your bike is essential, and Safe carz Limited offers comprehensive bike insurance to ensure you ride with confidence. </p>
+                <a href="./Bike.html"><button>Detail</button></a>
+            </div>
+           
+        </div>
+        <h4 ><a href="./Bike.html">Bike Insurance</a></h4> 
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="parent">
+            <img src="./images/truck insurance.avif" alt="">
+            <div class="child text-center">
+                <h3>Truck Insurance</h3>
+                <p>Securing your Truck is essential, and Safe carz Limited offers comprehensive bike insurance to ensure you ride with confidence</p>
+               <a href="./Truck.html"><button>Detail</button></a>
+            </div>
+        </div>
+         <h4><a href="./Truck.html">Truck Insurance</a></h4> 
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="parent">
+            <img src="./images/van for bg.jpg" alt="" >
+            <div class="child text-center">
+                <h3>Vans Insurance</h3>
+                <p>Securing your Van is essential, and Safe carz Limited offers comprehensive bike insurance to ensure you ride with confidence</p>
+              <a href="./Van.html">  <button>Detail</button></a>
+            </div>
+           
+        </div>
+          <h4><a href="./Van.html">Vans Insurance</a></h4> 
+    </div>
+   
+    </div>
+    <div class="row"> 
+        <div class="col-lg-4 col-md-6">
+            <div class="parent">
+
+           
+            <img src="./images/carfor  back.jpg" alt="" >
+            <div class="child text-center">
+                <h3>Car Insurance</h3>
+                <p>Securing your Car is essential, and Safe carz Limited offers comprehensive bike insurance to ensure you ride with confidence.</p>
+                <a href="./car.html"><button>Detail</button></a>
+           
+        </div>
+    </div>
+    <h4><a href="./car.html">Car Insurance</a></h4>
+    </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="parent bg-secondary">
+                <img src="./images/bus insurance.webp" alt="" >
+                <div class="child text-center">
+                    <h3>Bus Insurance</h3>
+                    <p>Securing your Bus is essential, and Safe carz Limited offers comprehensive bike insurance to ensure you ride with confidence</p>
+                  <a href="./Bus.html">  <button>Detail</button></a>
+                </div>
+                
+            </div>
+           
+            <h4><a href="./Bus.html" >Bus Insurance</a></h4>
+        </div>
+          
+    </div>
+     
+      </div>
+      
+
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6">
+              <h2>Safe Carz Limited</h2>
+              <p>Your trusted partner in automotive safety. At Safe Carz, we specialize in providing comprehensive solutions for vehicle safety, offering a range of services from reliable insurance coverage to state-of-the-art security systems. Drive with confidence, drive with Safe Carz."</p>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h2>Our  Services</h2>
+              <ul>
+                <li><a href="./car.html">Car</a></li>
+                <li><a href="./Bus.html">Buses</a></li>
+                <li><a href="./Truck.html">Trucks</a></li>
+                <li><a href="./Van.html">Vans</a></li>
+                <li><a href="./Bike.html">Bike</a></li>
+       
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <h2> Insurance Companies</h2>
+              <ul>
+                <li><a href="https://www.jubileelife.com/" target="_blank">Jubilee Insurance Company</a></li>
+                <li><a href="https://igiinsurance.com.pk/" target="_blank">IGI Insurance Company</a></li>
+                <li><a href="https://www.nationwide.com/" target="_blank">Nationwide Insurance</a></li>
+                <li><a href="http://pil.com.pk" target="_blank">Premier Insurance</a></li>
+                <a href="./Insurance Companies.html">More Detail</a>
+              </ul>
+              
+            </div>
+            <div class="col-md-3 col-sm-6">
+             <h2>Contact Info</h2>
+             <p>66 Guild Street 512B, Great North Town.</p>
+             <h6>Phone</h6>
+             <p>(+44) 123 456 789
+              <br>+ (124) 1523-567-9874
+             </p>
+             <h6>Email</h6>
+             <p>safecarz@gmail.com
+              <br>
+              info@gmail.com</p>
+            
+            </div>
+            <i class=" fa fa-brands fa-facebook" id="fb"></i>
+            <i class="fa fa-brands fa-whatsapp" id="wap"></i>
+            <i class="fa fa-brands fa-twitter" id="twit"></i>
+          </div>
+          
+        </div>
+      </div>
+      <div class="footer-end text-center">
+        <div class="container">
+          <p>&copy Safe Carz Limited| All Right Reserved | 2000</p>
+        </div>
+      </div>
+      <div class="container-fluid ml-3">
+        <a href="./whatsapp.html"><img src="./images/whatsapp.png" alt="" id="wap1"></a>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
